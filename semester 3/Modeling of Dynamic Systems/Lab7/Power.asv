@@ -1,0 +1,19 @@
+function Power()
+W_ust = 0.4;
+T_i = 293;
+T_ust = 303;
+V_ust = 0.04;
+C = 1820;
+ro = 1000;
+Q_ust = -W_ust*(T_i-T_ust)/(V_ust*ro) * C * V_ust*ro;
+
+x = 1:1:10000;
+y = zeros(size(x));
+X = ones(1,2000);
+Q = zeros(size(x));
+Q = (Q_ust*X, 0.5 * Q_ust * X, 1.5 * Q_ust * X, Q_ust * X);
+
+plot(x, Q)
+grid on
+
+end
