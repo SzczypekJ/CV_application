@@ -1,0 +1,16 @@
+[System]
+Version=2.2
+SystemType=SingleProcessorSystem
+DAQService=DsDAQ
+DsDAQBackground=1
+DAQService=HostService
+Status=Start
+RTP=Master
+
+[Master]
+Type=DS1005
+State=Enabled
+ServiceID=1
+BoardName=unknown
+File=fanuc_2015a.ppc
+ID=C8D303A0-816C-4516-8C56-F9BB3B16EC3F
