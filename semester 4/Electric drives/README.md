@@ -1,0 +1,2 @@
+Here you can find my works from subject "Electric Drives". You can find here reports which contains what I had to do during the laboratorie. 
+During this subject I gained the basic knowledge of some electric motors and how they works.

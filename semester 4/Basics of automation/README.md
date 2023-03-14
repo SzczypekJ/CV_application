@@ -1,0 +1,2 @@
+Here you can find my works form subcject "Basic of automation". During this subject we programmed in "Matlab" and "Simulink".
+I could learn how to implement basics regulators. I learnt how PID works and how to used it in practical problems.

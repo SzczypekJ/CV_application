@@ -1,0 +1,2 @@
+Here you can find my reports from subcject "Analog electronics". During this subject I could with my own hands connect some wires to create for example:
+Low pass filter, High Pass Filter, Super diode, Zener diode. I learnt how to create it on the contact plate.
