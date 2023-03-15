@@ -1,0 +1,2 @@
+Here you can find my works form subcject "Optimalization Methods". During this subcjet I learnt how to implement simple optimalization
+algorithms. I programmed in Matlab so I was able to improve my skills in this programming language. 

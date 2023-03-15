@@ -1,0 +1,2 @@
+Here you can find my finall project from subject "microprocessor technology". On this project I was programming in C in the development enviroment "CUBE".
+I had to programm microprocessor STM32 NUCLEO. The procject contains some faetures for example: displaying number, interrupts, DMA.
