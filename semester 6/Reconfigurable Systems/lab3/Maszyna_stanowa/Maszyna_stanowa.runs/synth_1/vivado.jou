@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Mar 18 14:01:53 2023
+# Process ID: 28624
+# Current directory: C:/Users/szczy/Desktop/STUDIA/SEM6/SR/lab3/Maszyna_stanowa/Maszyna_stanowa.runs/synth_1
+# Command line: vivado.exe -log maszyna_stanowa.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source maszyna_stanowa.tcl
+# Log file: C:/Users/szczy/Desktop/STUDIA/SEM6/SR/lab3/Maszyna_stanowa/Maszyna_stanowa.runs/synth_1/maszyna_stanowa.vds
+# Journal file: C:/Users/szczy/Desktop/STUDIA/SEM6/SR/lab3/Maszyna_stanowa/Maszyna_stanowa.runs/synth_1\vivado.jou
+# Running On: DESKTOP-92KUKD6, OS: Windows, CPU Frequency: 2296 MHz, CPU Physical cores: 8, Host memory: 16974 MB
+#-----------------------------------------------------------
+source maszyna_stanowa.tcl -notrace
