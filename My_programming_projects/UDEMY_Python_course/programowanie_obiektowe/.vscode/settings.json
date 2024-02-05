@@ -1,9 +1,0 @@
-{
-    "editor.quickSuggestionsDelay": 10,
-    "editor.acceptSuggestionOnEnter": "on",
-    "python.languageServer": "Pylance",
-    "cSpell.words": [
-        "bankaccount",
-        "udemy"
-    ]
-}
