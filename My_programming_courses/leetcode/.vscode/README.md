@@ -1,0 +1,2 @@
+Here you can find my programming tasks which I made on leetcode.com site. The file names indicate the day I completed the tasks.
+Through these tasks I was able to increase my programming, analytical thinking and problem-solving skills.
