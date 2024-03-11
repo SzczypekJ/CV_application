@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block body_header %}
+Enter Notification Details
+{% endblock %}
+{% block body_content %}
+{{super()}}
+<form id="notification_form" action="{{ url_for('notification') }}" method="POST">
+    <label for="room_number">Room_number</label>
+    <input type="text" id="room_number" name="room_number"><br>
+    <label for="guest_name">Guest_name</label>
+    <input type="text" id="guest_name" name="guest_name"><br>
+    <label for="priority">Priority</label>
+    <label for="notification_text">Notification</label>
+    <textarea rows="4" cols="50" name="notification_text"></textarea><br>
+    <label for="priority">Priority</label>
+    <select name="priority" id="priority">
+        {% for priority in list_of_priorities %}
+        <option value="{{ priority.code }}" {{ 'selected' if priority.selected}}>{{ priority.description }}</option>
+        {% endfor %}
+    </select><br>
+    <input type="submit" value="Send">
+
+</form>
+{% endblock %}

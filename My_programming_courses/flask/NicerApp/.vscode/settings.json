@@ -1,0 +1,10 @@
+{
+    "editor.quickSuggestionsDelay": 10,
+    "editor.acceptSuggestionOnEnter": "on",
+    "python.languageServer": "Pylance",
+    "editor.inlineSuggest.showToolbar": "onHover",
+    "cSpell.words": [
+        "dolar",
+        "endmacro"
+    ]
+}

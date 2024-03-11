@@ -1,0 +1,21 @@
+{% from "macros.html" import show_flash %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hotel 101</title>
+</head>
+
+<body>
+
+    {{show_flash()}}
+
+    <h1>
+        {% block body_header %} {% endblock %}
+    </h1>
+    {% block body_content %}
+    <hr> {% endblock %}
+    {% include "footer.html" %}
+</body>
+
+</html>
