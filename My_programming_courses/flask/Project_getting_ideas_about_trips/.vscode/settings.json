@@ -4,6 +4,9 @@
     "python.languageServer": "Pylance",
     "editor.inlineSuggest.showToolbar": "onHover",
     "cSpell.words": [
-        "dolar"
+        "Completness",
+        "dolar",
+        "endmacro",
+        "informations"
     ]
 }

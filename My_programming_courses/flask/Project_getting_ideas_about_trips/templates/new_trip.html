@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-start">
+        <div class="col-5 h1">Add new trip idea!</div>
+    </div>
+    <form id="exchange_form" action="{{ url_for('new_trip') }}" method="POST">
+        <div class="row justify-content-start">
+            <div class="col-3"><label for="trip_name" class="col-form-label">Trip name</label></div>
+            <div class="col-6">
+                <input type="text" id="trip_name" name="trip_name" value="" class="form-control"><br>
+            </div>
+        </div>
+        <div class="row justify-content-start">
+            <div class="col-3"><label for="your_email" class="col-form-label">Your email</label></div>
+            <div class="col-6">
+                <input type="text" id="your_email" name="your_email" value="" class="form-control"><br>
+            </div>
+        </div>
+        <div class="row justify-content-start">
+            <div class="col-3"><label for="short_description" class="col-form-label">Short description</label></div>
+            <div class="col-6">
+                <textarea rows="4" cols="50" id="short_description" name="short_description" value=""
+                    class="form-control"></textarea><br>
+            </div>
+        </div>
+        <div class="row justify-content-start">
+            <div class="col-3"><label for="completeness" class="col-form-label">Completeness</label></div>
+            <div class="col-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="completness" id="completeness1" value="yes"
+                        {{ 'checked' if completness else '' }}>
+                    <label class="form-check-label" for="completeness1">Yes - the idea is complete including price
+                        proposal</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="completness" id="completeness2" value="no"
+                        {{'checked' if not completness}}>
+                    <label class="form-check-label" for="completeness2">No - this is just a pure idea</label>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-start">
+            <div class="col-3"><label for="contact_ok" class="col-form-label">May we contact you for details?</label>
+            </div>
+            <div class="col-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="contact_ok" name="contact_ok" value="yes">
+                    <label class="form-check-label" for="contact_ok">Yes, I agree</label>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-start">
+            <div class="col-3 col-form-label"></div>
+            <div class="col-3">
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

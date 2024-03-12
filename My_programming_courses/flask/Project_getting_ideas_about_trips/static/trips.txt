@@ -1,0 +1,3 @@
+Italy,jakub.szczypek@tlen.pl,Drink a wine,True,True
+Poland,aaa@gmail.com,Drink a beer,True,True
+awe uuu,awe@gmail.com,aewae,False,False

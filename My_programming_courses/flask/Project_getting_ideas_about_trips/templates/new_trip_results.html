@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row justify-content-start">
+        <div class="col-5 h1">Thank you for your idea!</div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <img src="{{ url_for('static', filename='thank_you.png') }}" class="img-fluid" alt="Thank you image">
+        </div>
+    </div>
+</div>
+{% endblock %}
