@@ -1,19 +1,38 @@
+# deck.py
 import random
-from cards import Card
+from cards import Card  # Zakładam, że Card jest importowane z cards.py
 
 
 class Deck:
-    # shuffle the cards objects
     def __init__(self):
-        self.cards = []
-        for i in range(13):
-            for j in range(4):
-                self.cards.append(Card(i, j))
-        random.shuffle(self.cards)
+        self.cards = self.initialize_deck()
+        self.discard_pile = []
 
-    # method allows you to draw a card from the top of the deck
+    def initialize_deck(self):
+        # Tworzenie standardowej talii kart
+        deck = []
+        for value in range(1, 14):  # Wartości od 1 do 13
+            for suit in range(4):  # 4 kolory (0, 1, 2, 3)
+                deck.append(Card(value, suit))
+        random.shuffle(deck)
+        return deck
+
     def draw_card(self):
-        return self.cards.pop()
+        if not self.cards:
+            self.reshuffle_discard_pile()
+        if self.cards:
+            return self.cards.pop()
+        else:
+            raise IndexError("No cards left to draw")
 
-    # def show_back_of_the_card(self):
-    #     screen.blit(self.image, (x, y))
+    def copy(self):
+        new_deck = Deck()
+        new_deck.cards = self.cards[:]
+        new_deck.discard_pile = self.discard_pile[:]
+        return new_deck
+
+    def reshuffle_discard_pile(self):
+        if self.discard_pile:
+            self.cards = self.discard_pile[:]
+            self.discard_pile = []
+            random.shuffle(self.cards)

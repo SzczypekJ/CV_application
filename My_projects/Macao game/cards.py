@@ -1,3 +1,4 @@
+# cards.py
 import pygame
 import random
 
@@ -21,7 +22,6 @@ for i in range(1, 14):
 back_of_the_card = pygame.image.load(f'cards/back_of_the_card.png')
 back_of_the_card = pygame.transform.scale(
     back_of_the_card, (CARD_WIDTH, CARD_HEIGHT))
-cards.append(back_of_the_card)
 
 
 class Card:
@@ -29,10 +29,15 @@ class Card:
         self.value = value
         self.suit = suit
 
-        self.image = cards[value * 4 + suit]
+        # Corrected indexing method
+        self.image = cards[(value - 1) * 4 + suit]
 
     def draw(self, x, y):
         screen.blit(self.image, (x, y))
 
     def __repr__(self):
         return f"{self.value} of {self.suit}"
+
+    @staticmethod
+    def draw_back(x, y):
+        screen.blit(back_of_the_card, (x, y))
