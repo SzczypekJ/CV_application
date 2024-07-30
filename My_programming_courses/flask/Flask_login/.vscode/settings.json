@@ -1,0 +1,19 @@
+{
+    "editor.quickSuggestionsDelay": 10,
+    "editor.acceptSuggestionOnEnter": "on",
+    "python.languageServer": "Pylance",
+    "editor.inlineSuggest.showToolbar": "onHover",
+    "cSpell.words": [
+        "dolar",
+        "endmacro"
+    ],
+    "files.associations": {
+        "*.html": "html",
+        "*.jinja": "html",
+        "*.jinja2": "html"
+    },
+    "emmet.includeLanguages": {
+        "html": "html",
+        "jinja-html": "html"
+    }
+}

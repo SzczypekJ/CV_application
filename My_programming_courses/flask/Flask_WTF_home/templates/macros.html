@@ -1,0 +1,7 @@
+{% macro show_validation_results(field) %}
+<ul> 
+    {% for error in field.errors %}
+    <li>{{ error }}</li>
+    {% endfor %}
+</ul> 
+{% endmacro %}

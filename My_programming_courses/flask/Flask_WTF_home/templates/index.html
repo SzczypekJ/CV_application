@@ -1,0 +1,25 @@
+{% from "macros.html" import show_validation_results %}
+
+<form method='POST'>
+    {{ form.csrf_token }}
+    {% if form.station %}
+    {{ form.station.label }} {{ form.station }} <br />
+    {{ show_validation_results(form.station) }}
+    {% endif %}
+    {{ form.train_number.label }} {{ form.train_number }} <br />
+    {{ show_validation_results(form.train_number) }}
+    {{ form.is_delayed.label }} {{ form.is_delayed }} <br />
+    {{ form.delay_minutes.label }} {{ form.delay_minutes }} <br />
+    {{ show_validation_results(form.delay_minutes) }}
+    {% if form.day %}
+    {{ form.day.label }} {{ form.day }} <br />
+    {{ show_validation_results(form.day) }}
+    {% endif %}
+    {% for option in form.delay_reason %}
+    <tr>
+        <td>{{ option }}</td>
+        <td>{{ option.label }}</td>
+    </tr>
+    {% endfor %}
+    <input type="submit" value="GO!">
+</form>
